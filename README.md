@@ -46,7 +46,11 @@ npm run build
 - - css-mqpacker
 - - cssnano
 
-
+- [Vue.js](https://vuejs.org/)
+- - vue-loader
+- - vue-style-loader
+- - vue-template-compiler
+- - vuex
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

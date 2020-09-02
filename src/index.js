@@ -1,7 +1,11 @@
-import './js/common'
 
-import './css/main.css'
+// JS - ./js/index.js
+import './js'
+// SCSS
 import './scss/main.scss'
+// CSS (example)
+import './css/main.css'
+
 
 /* Examples of inputs */
 
@@ -10,3 +14,21 @@ import './scss/main.scss'
 //import Bootstrap from 'bootstrap/dist/css/botstrap.min.css'
 //import Vue from 'vue'
 // window.Vue = require('vue')
+
+
+window.Vue = require('vue')
+import store from './store'
+
+Vue.component('example-component', require('./components/Example.vue').default)
+
+
+
+const app = new Vue({
+  data () {
+    return {
+      component: false,
+    }
+  },
+  store, 
+  el: '#app'
+})

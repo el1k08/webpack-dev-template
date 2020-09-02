@@ -32,12 +32,20 @@ npm run build
 - - @babel/preset-env
 - - babel-loader
 
-- CSS/SASS
+- CSS/SASS Loaders
 - - [Mini Css Extract Plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
 - - css-loader
 - - style-loader
 - - sass-loader
 - - node-sass
+
+- [PostCSS](https://postcss.org/)
+- - postcss-loader
+- - autoprefixer
+- - css-mqpacker
+- - cssnano
+
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

@@ -1,0 +1,18 @@
+{
+  "name": "webpack-dev-template",
+  "version": "1.0.0",
+  "description": "Webpack DEV Tempalate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Eli Slavutski",
+  "license": "MIT",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

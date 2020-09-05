@@ -51,6 +51,12 @@ module.exports = {
         }
       }
     }, {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]'
+      }
+    }, {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
@@ -71,7 +77,7 @@ module.exports = {
           options: {
             sourceMap: true,
             config: {
-              path: `${PATHS.src}/js/config/postcss.config.js`
+              path: `./postcss.config.js`
             }
           }
         }, {
@@ -96,7 +102,7 @@ module.exports = {
           options: {
             sourceMap: true,
             config: {
-              path: `${PATHS.src}/js/config/postcss.config.js`
+              path: `./postcss.config.js`
             }
           }
         }
@@ -105,6 +111,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      '~': 'src',
       'vue$': 'vue/dist/vue.js'
     }
   },
@@ -120,8 +127,12 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [{
-          from: `${PATHS.src}/img`,
+          from: `${PATHS.src}/${PATHS.assets}/img`,
           to: `${PATHS.assets}img`
+        },
+        {
+          from: `${PATHS.src}/${PATHS.assets}/fonts`,
+          to: `${PATHS.assets}fonts`
         },
         {
           from: `${PATHS.src}/static`,

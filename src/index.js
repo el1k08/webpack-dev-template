@@ -1,10 +1,9 @@
-
 // JS - ./js/index.js
 import './js'
 // SCSS
-import './scss/main.scss'
+import './assets/scss/main.scss'
 // CSS (example)
-import './css/main.css'
+import './assets/css/main.css'
 
 
 /* Examples of inputs */
@@ -24,11 +23,11 @@ Vue.component('example-component', require('./components/Example.vue').default)
 
 
 const app = new Vue({
-  data () {
+  data() {
     return {
       component: false,
     }
   },
-  store, 
+  store,
   el: '#app'
 })

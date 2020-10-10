@@ -2,8 +2,9 @@
 import './js'
 // SCSS
 import './assets/scss/main.scss'
+
 // CSS (example)
-import './assets/css/main.css'
+// import './assets/css/main.css'
 
 
 /* Examples of inputs */
